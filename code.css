@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ner {
+  font-size: 24px;
+  color: blue;
+}
+
+.tap {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  transition: width 4s ease-in-out;
+}
+.tap:active {
+  width: 800px;
+}
+.cursor:hover {
+  width: 800px;
+}
+.cursor {
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+  transition: width 4s ease-in;
+}

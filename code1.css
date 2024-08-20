@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dugui {
+  height: 80px;
+  width: 80px;
+  border-radius: 256px;
+
+  background-color: aliceblue;
+  border: burlywood 2px solid;
+  transition: width 0.2s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-left: 50px;
+
+  .ug {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    color: burlywood;
+  }
+}
+.gaduur {
+  display: flex;
+
+  justify-content: center;
+  gap: 10px;
+}
+.search {
+  width: 30px;
+  height: 30px;
+}
+
+.dugui:hover {
+  width: 300px;
+  border-radius: 64px;
+  display: flex;
+  padding: 50px;
+  justify-content: flex-start;
+
+  .ug {
+    visibility: visible;
+    width: 150px;
+    height: 35px;
+    border: 0;
+    background-color: aliceblue;
+
+    color: burlywood;
+    font-size: 30px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  input:enabled {
+    color: burlywood;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 50%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+}
